@@ -1,0 +1,570 @@
+/* ff1975 : Wed, 07 Nov 2018 16:58:45 +0800 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn, th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;}
+pre{font-size: 1em ;}
+.article-content{ _height: 1% ;  overflow: hidden ;  _overflow: none;}
+.article-content p{margin-bottom: 15px;}
+.article-content li{list-style-type: disc; margin-left:20px;}
+.article-content ol li{list-style-type: decimal; margin-left:20px;}
+a {text-decoration: none;outline:none;}
+br{letter-spacing: normal;}
+
+html{}
+body{font-size: 10pt;line-height: 180%;font-family:Verdana;}
+body{cursor:crosshair}
+a:hover {cursor:help;}
+
+a{color: #554F4B; }
+a:hover{color: #756D68;}
+a img{border:0px }
+
+input{}
+textarea {}
+
+
+#blog-main{}/*主畫面的全部*/
+#body-div{}/*整個部落格*/
+
+#authority{text-align:center;background:#eee ;padding-top: 10px; }/*發表新文章 管理後台*/
+#newpost{margin:10px ;}/*發表新文章*/
+#backstage{margin:10px ;}/*管理後台*/
+
+#container{ padding-top: 10px;background:url(https://pic.pimg.tw/luna05/0e473a7fc79cbb8244531028fdf7feb9.jpg) repeat-x; ;}
+#container2{background: url(https://pic.pimg.tw/luna05/af1bfcea8985f4ccb1d51ffb137e97a9.png) repeat-x bottom left;}
+#container3{width:900px;margin:0px auto;overflow: hidden ;_overflow: none; _height: 1%;background:url(https://pic.pimg.tw/luna05/b0a8ca1d552521dcecd285f1b795dc82.png)  repeat-y;;}
+
+/*------------------------------------------------------------ header */
+#header{height:410px;position : relative;background:url(https://pic.pimg.tw/luna05/3b24f3fb3869c02437dbb1eaa278fd80.png) no-repeat ; }/*上面的那些*/
+#login-bar{position : absolute;bottom:3px;right:10px}/*招呼語*/
+.separator{visibility : hidden }/*中間的|*/
+#pixnet-lang{}/*語系▼*/
+
+#banner{}/*標題區*/
+#banner	h1 a {line-height: 35px;padding-left:10px;font-weight: bold;font-size: 12pt;}/*標題*/
+#banner	.skiplink{display : none;}/*跳到主文*/
+#banner	h2{color: #fff;padding:5px 20px}/*副標題*/
+#banner	p#blog-category{display : none;}/*部落格全站分類*/
+
+ul#navigation{verflow: hidden ;_overflow: none; _height: 1%;position : absolute;bottom:0;left:0px;padding:0 5px  5px  }/*四大連結*/
+ul#navigation li{float : left;width:82px;height:24px;}
+ul#navigation li a{display : block; text-align:right;font-size: 1pt;color: #000;}
+ul#navigation li a:hover{}
+
+li#link-album{}/*相簿*/
+li#link-album a{background:url(https://pic.pimg.tw/luna05/thumb_edaf29a03917c674aadb6113944bb9eb.png) no-repeat  ;}
+li#link-album a:hover{background:url(https://pic.pimg.tw/luna05/9e48ae7f8d6bd43629058c2859bee6b3.png) no-repeat  ;}
+
+li#link-blog{}/*部落格*/
+li#link-blog a{background:url(https://pic.pimg.tw/luna05/d1729d27f43df6d570512899f408713d.png) no-repeat  ;}
+li#link-blog a:hover{background:url(https://pic.pimg.tw/luna05/6663fa9d001387824b8d1118d1fdea9b.png) no-repeat  ;}
+
+#link-guestbook{margin-left: 25px;}/*留言*/
+li#link-guestbook a{background:url(https://pic.pimg.tw/luna05/8dc2b22111e9972a31f511c45ccb605d.png) no-repeat  ;}
+li#link-guestbook a:hover {background:url(https://pic.pimg.tw/luna05/0e292a480beacaa39e056698d5777817.png) no-repeat  ;}
+
+#link-profile{margin-left: 25px;}/*名片*/
+li#link-profile a{background:url(https://pic.pimg.tw/luna05/681a0a2a3bc52e8b12db56556d1761c1.png) no-repeat  ;}
+li#link-profile a:hover {background:url(https://pic.pimg.tw/luna05/f9f6a3a4e4912b8b32619572321d972e.png) no-repeat  ;}
+/*------------------------------------------------------------ header end */
+/*------------------------------------------------------------ main */
+#main{}/*文章區+連結*/
+
+/*------------------------------------------------------------ content */
+#content{width:620px;;float : right;float : right;padding:10px;}/*整個文章區*/
+
+#spotlight{margin:0 auto;background:url(https://pic.pimg.tw/luna05/3cdae84753cee9817605c3a9af9bf69a.png) no-repeat bottom ; padding:5px 0 ;width:600px;margin-bottom:10px}/*公告區*/
+
+#spotlight h5{background:url(https://pic.pimg.tw/luna05/7f2e4c4f3c4f476072371524adea82fc.png) no-repeat ;
+line-height: 23px;padding:7px 15px 0;font-weight: bold;font-size: 10pt;color:#554F4B}/*公告標題*/
+
+#spotlight-text{background:url(https://pic.pimg.tw/luna05/d598359a265d5ec9394109ed595ce936.png)  repeat ;padding: 5px 20px;color:#554F4B}/*公告內容*/
+
+#article-area{margin:0 auto;background}/*文章區含引用;以下*/
+#article-box{ }/*文章區不含引用以下*/
+.article{padding:10px 10px 20px; }/*文章區不含引用以下*/
+
+ul.article-head{background:url(https://pic.pimg.tw/luna05/bde00df3d23ba9fa61fb9f97e307e984.gif) repeat-x bottom;margin:0 ;;}/*日集+文章標題*/
+li.publish{text-align:right;padding:0 21px 0 0;margin:0;line-height:12px; }
+/*日期*/
+span.month{}/*月*/
+span.date{}/*日*/
+span.day{}/*星期*/
+span.year{}/*年*/
+span.time{display : none;}/*時間*/
+li.title h2 {padding:0 10pt 5px;margin:0 }/*文章標題*/
+li.title h2 a{font-weight: bold;font-size: 11pt;}
+
+.article-body{background:#f9f9f9;padding:15px 15px;position : relative;margin:0}/*內文+資訊*/
+.article-content{ }/*文章內文*/
+
+.article-content p{}/*文章內文*/
+.article-content a{ color: #4E393A;background:#FFF;padding:1PX 3px;display : lnline;}
+.article-content a:hover{color: #BFA4A8;}
+
+.more{ text-align:right;padding-left:498px;}/*繼續閱讀*/
+.more a{display : block;width:68px;height:35px;font-size: 0.5pt;color: #f9f9f9;
+background:url(https://pic.pimg.tw/luna05/4c98c27de0850f46f67f337386860193.png) no-repeat top left}
+.more a:hover{color: #f9f9f9;background:url(https://pic.pimg.tw/luna05/ab53cb3aa1dc50185cbe4853df270fb7.png) no-repeat top left}
+
+#blog-main .refer,#category-main .refer{float: left;display : none;}
+
+p.author span{display : none;}/*人氣*/
+
+#blog-main .back-to-top,
+#ategory-main .back-to-top{position : relative; margin-bottom:30px}
+
+ol,ul,li {list-style:none !important ; }
+
+.secret-code-notify input{border:0px}
+
+.bookmark{position : absolute;width: 284px;bottom:5;left:15px}/*分享*/
+html:root .bookmark {bottom:0;}
+.bookmark span{display : none;}/*分享標題*/
+.bookmark img{}/*分享圖示*/
+
+
+
+.forward{padding:0;position : absolute;width: 284px;bottom:5px;right:15px;text-align:right;}/*短網址 專欄 轉寄*/
+
+
+#article-main .article-body{padding-bottom:50px;}
+
+#article-main p.author{text-align:center;color: #aaa;}
+p.author{color: #aaa;}
+
+.back-to-top{clear:both;text-align:right;}
+
+.back-to-top a{text-transform:uppercase;font-size:11px;color:#aaa;}
+
+#article-main .article-footer{overflow: hidden ;_overflow: none; _height: 1%;;}/*進入文章的文章分類+歷史上的今天*/
+
+#article-main ul.refer{width:570px;margin:5px auto}/*進入文章的文章分類區*/
+.history{}/*歷史上的今天*/
+.history h6{clear : both;margin-top:60px}/*歷史上的今天標題*/
+.history ul{overflow: hidden ;_overflow: none; _height: 1%;;}
+#article-main .article-footer li{width:285px;float : left;}/*進入文章的各文章分類+每個歷史上的今天*/
+
+#article-main .back-to-top a{padding: 1px 5px;background:#eee;}
+
+.user-post-title{height: 21px;font-size:1pt;text-indent: -5000px;background:url(https://pic.pimg.tw/luna05/81092600ee8821f4454d1cc5fed15baa.png) 5px top no-repeat;width:230px;margin:10px 0 20px ;}
+
+
+#trackback-box{position : relative;line-height: 20px; }
+#trackback-url{;padding-left:5px;position : absolute;right:0;top:0px;width:393px;height: 22px;background:url(https://pic.pimg.tw/luna05/9acbd114d98bd186ae61569a25c6b3ae.png) 5px top no-repeat;}
+
+#trackback-url input{background:url(https://pic.pimg.tw/luna05/991fdbb46dc9419782ea2066528108db.png) left top no-repeat;  width:60px;border:0;margin-left: 5px}/*按鈕*/
+
+input#trackback-input{width:240px;height: 22px;padding:0;background:none;border0px;background:none;margin-right: 5px}/*引用網址*/
+
+#trackback-text{margin:0 auto;width:560px;background:#f9f9f9;padding:0 15px 15px}/*引用區*/
+
+#trackback-box .user-post-text{}
+#trackback-text ul.single-post{margin-bottom:0px;padding:15px 0;background:url(https://pic.pimg.tw/luna05/fc89543422f29f425c88ca6adfa77728.gif) 50% bottom repeat-x;}
+#trackback-text li.post-info{}/*引用者資訊*/
+span.floor{display : none;}/*前面的序號*/
+#trackback-text li.post-text{text-align:right;color: #8fa2b5;}/*引用內文*/
+#trackback-text li.post-text a{display : block;background:#eee ;padding:2px 5px;text-align:left;margin-top:10px}
+#trackback-text li.post-text a:hover{background:#fff;}
+
+
+#comment-box .user-post-title{
+margin:10px 0 20px;background:url(https://pic.pimg.tw/luna05/48c573a4d8130388e7cc9d120a20baba.png) 5px bottom no-repeat;}
+
+#comment-box{}/*迴響區*/
+.user-post-box{}
+h3#comment-title{}/*迴響列表標題*/
+.user-post-title{}
+img#comment-text-switch{}/*開合圖示*/
+h3#comment-title span{}/*迴響列表字樣*/
+
+#comment-box{position : relative;margin-top:30px }
+.post-comment{;padding-left:5px;position : absolute;right:15px;top:0px;overflow: hidden ;_overflow: none; _height: 1%;;}/*發表留言*/
+.post-comment a{display : block; background:url(https://pic.pimg.tw/luna05/991fdbb46dc9419782ea2066528108db.png) left top no-repeat;  width:60px;border:0;margin-left: 5px;line-height: 22px;padding:0 4px}
+.post-comment a:hover {}
+
+#comment-text{}
+#comment-box .user-post-text{margin:0 auto;width:560px;background:#f9f9f9;padding:0 15px 15px;}
+
+#comment-text ul.single-post{margin-bottom:0px;padding:15px 0  ;
+background:url(https://pic.pimg.tw/luna05/fc89543422f29f425c88ca6adfa77728.gif) 50% bottom repeat-x;position : relative;clear :both; overflow: hidden ;_overflow: none; _height: 1%;;}/*每個迴響*/
+
+#comment-text li.post-info{text-align:left;top:15px;width:560px;background:#eee ;margin-bottom:5px;}/*迴響者資訊*/
+#comment-text li.post-info a{}
+#comment-text span.floor{}/*迴響者序號*/
+#comment-text span.user-name{padding-left:17px;background:url(https://pic.pimg.tw/luna05/c3979332ab307c4ed430350ca00389c4.gif) 5px  50% no-repeat;top:;position : absolute;left:0;}/*迴響者ID&登入圖示*/
+#comment-text  span.user-name img{display : none }/*迴響登入圖示*/
+
+#comment-text span.post-time{;font-size: 9pt;color: #aaa;;position : absolute;right:5px}/*時間*/
+#comment-text a.homepage{}/*首頁*/
+#comment-text a.homepage img{}
+#comment-text li.post-info .comment-icon{position : relative;top:75px;left:3px;;z-index:30}
+#comment-text li.post-info  .show-message,#comment-text li.post-info  .hide-message{position : absolute;;top:35px;left:0px;;z-index:30}/*公開他*/
+#comment-text li.post-info .hide-message{}/*公開他*/
+#comment-text li.post-info .delete-message{position : absolute;;top:35px;left:16px;z-index:30}/*刪除他*/
+#comment-text .reply-message{position : absolute;;top:35px;left:32px;;z-index:30;}/*回復*/
+
+#comment-text li.post-photo{;width:55px;height:85px;z-index:3;float : left;}/*照片區*/
+#comment-text li.post-photo img{width:50px;height:50px;}
+#comment-text li.post-text{overflow: hidden }/*迴響內容*/
+#comment-text li.post-text p{}/*標題*/
+#comment-text li.post-text .comment-icon{display : none }/*悄悄話的瑣*/
+
+#comment-text li.reply-text{clear : both;overflow: hidden ;color: #8fa2b5;position : relative;bottom:05px}/*回覆內容*/
+#comment-text li.reply-text p{color: #000;text-align:right;}/*回復資訊*/
+
+#comment-text form.oneTimeForm{margin-top:15px}/*編寫回復*/
+#comment-text form.oneTimeForm textarea {border:0;background:eee}
+#comment-text form.oneTimeForm input{background:none;border:0}
+#comment-text li.reply-text .comment-icon{}/*編輯回復*/
+#comment-text li.reply-text .delete-message{}/*刪除回復*/
+
+#trackback-text li.post-text{text-align:right;}/*引用內文*/
+#trackback-text li.post-text a{display : block;padding:2px 5px;text-align:left;margin-top:10px}
+
+.json-form {;background:#f9f9f9;border: 1px solid  #f9f9f9; width:588px;margin:0 auto}/*留下迴響區*/
+
+h3.article-area-title{margin:0 20px;float : left;}/*目前分類*/
+#view-mode{}/*瀏覽方式*/
+#display{margin:20px;text-align:right;;z-index:30}
+#display span{}/*瀏覽方式字樣*/
+#display a{}
+#display a:hover {}
+
+
+.main-list table{ width:580px;margin:0 auto;clear : right; } /*標題列表儲存格*/
+.main-list th{text-align:center;
+background:url(https://pic.pimg.tw/luna05/a332238c627963de2be26d1d25f7dba5.gif) repeat-x left  bottom; padding:3px 0 }  /*標題*/
+.main-list td{ padding:3px 0} /*內容*/
+.list-date{ text-align:center;width:96px } /*發表時間*/
+th.list-title{} /*文章標題*/
+.list-visit{text-align:center;width:96px} /*人氣*/
+.list-comment{text-align:center;width:96px} /*迴響*/
+td.list-date{} /*日期*/
+td.list-title{} /*文章名稱*/
+td.list-visit {}  /*文章人氣*/
+td.list-comment{} /*文章回響*/
+
+
+.page{margin:0;padding:0;text-align:center; }
+.page span{padding:0 3px;font-weight: bold;color: #FF5061;}
+.page a{padding:0 3px;}
+.page a:hover{}
+
+/*------------------------------------------------------------ content end */
+/*------------------------------------------------------------ links */
+
+#links{ width:242px;float : left;
+
+}/*連結區*/
+#links-row-1{ #F00;padding:0 10px 0px;
+}/*連結區*/
+#links-row-2{ padding: 0 10px  0px;}/*連結區*/
+.box{ margin:20px 0;clear : both;}/*每個區域*/
+h4.box-title{background:url(https://pic.pimg.tw/luna05/381b0a2c4ae2dd01e4e58e34cca9aefc.png) no-repeat   bottom;padding-left:37px;clear : both;}/*連結區的標題*/
+
+.box-text{padding:10px;overflow: hidden ;
+_overflow: none;
+_height: 1%;}/*連結區各小區塊*/
+.entry-content li{line-height: 150%}/*連結區各小區塊 基本上設定.box-text就好*/
+.box-text li span{;FONT-FAMILY: Georgia}
+.box-text li a span{}
+
+#announce{} /*站方公告*/
+#announce h4.box-title{}
+#announce .box-text{}
+#announce ul{}
+#announce li{margin-bottom:5px}
+#announce li a {}
+#announce li a:hover{}
+
+#events{} /*活動快報*/
+#events h4.box-title{}
+#events .box-text {}
+#events .box-text #express-box{margin-left:15px}
+
+#user-info{}/*個人資訊*/
+#user-info h4.box-title{}
+#user-info .box-text {text-align:center}
+a.user-img{}
+#user-info a  img{}
+#user-info a:hover  img{}
+.user-action{}
+.user-action input.add_friend{}/*加入好友*/
+.user-action input.add_subs{}/*加入訂閱*/
+#user-info dl{text-align:center }
+#user-info dt{display : none;}
+#user-info dd{}
+#user-info dd a{}
+#user-info dd a:hover {}
+a#user-info-open-friends-iframe{}
+
+#hot-article{} /*熱門文章*/
+#hot-article h4.box-title{}
+#hot-article .box-text{}
+ul#hotArtUl{}
+#hot-article li {margin-bottom:5px}
+#hot-article li a { }
+#hot-article li a:hover{}
+#hot-article li span {color: #8a623b;font-size: 10px;margin-right:5px}
+
+#category{} /*文章分類*/
+#category .box-more{text-align:right} /*上面的按鈕*/
+#category .inner-box{margin-bottom:7px} /*各分類*/
+#category .inner-box h6{} /* 分類資料夾名稱*/
+#category ul{}
+#category .inner-box  li{margin-left:10px}
+#category li a {}
+#category li a:hover{}
+
+#recent-article{} /*最新文章*/
+#recent-article h4.box-title{}
+#recent-article .box-text{}
+#recent-article ul {}
+#recent-article li {margin-bottom:5px}
+#recent-article li a { }
+#recent-article li a:hover{}
+
+#recent-article li  img{ filter:alpha(opacity=70);opacity: 0.7;}
+#category img{ filter:alpha(opacity=60);opacity: 0.6;}
+.box-text   li a {display : block; }
+
+#latest-comment{} /*最新迴響*/
+#latest-comment h4.box-title{}
+#latest-comment .box-text{}
+#latest-comment ul{}
+#latest-comment li{text-transform:uppercase ;z}/*每個迴響*/
+#latest-comment li span{color: #8a623b;font-size: 10px;}/*迴響日期*/
+#latest-comment li a {text-align:right;margin-bottom:5px}
+#latest-comment li a:hover{}
+
+#latest-trackback{} /*最新引用*/
+#latest-trackback h4.box-title{}
+#latest-trackback .box-text{}
+#latest-trackback ul{}
+#latest-trackback li{text-align:right;margin-bottom:5px;} /*每個引用*/
+#latest-trackback li span{font-family:Verdana;} /*引用者名稱*/
+#latest-trackback li a {text-align:left;}
+#latest-trackback li a:hover{}
+
+#murmur{}/*我的 Murmur (基本)*/
+#murmur h4.box-title{}
+#murmur .box-text{}
+li.murmur-time{font-size: 10px;color: #8a623b;} /*時間*/
+span#jsonp-murmur-text{font-family:Verdana;} /*內容*/
+.box-more{font-size: 11px;text-align:right;} /*更新 所有歷史碎碎念*/
+.box-more a{display : lnline;padding: 3px  ;background: none;color: #b39f8c;}
+.box-more a:hover{background: #b39f8c;color: #fff;}
+
+#archive{ margin-bottom:0;padding:0;} /*文章精選*/
+#archive h4.box-title{}
+#archive .box-text{padding-bottom:0;}
+#archive select{float : left;} /*選擇*/
+#archive option[value]{}/*選擇裡面的每個選項*/
+#archive .box-more{} /*所有文章列表*/
+
+#search{;}/*文章搜尋*/
+#search h4.box-title{}
+#search .box-text{}
+#search ul{ background:url(https://pic.pimg.tw/luna05/a5763bee88976c112459f152bcb6c93c.png) no-repeat  10px 2px;filter:alpha(opacity=60);opacity: 0.6;}
+#search li input[type="text"]{width:140px;float : left;margin:2px 13px 5px 10px;padding-left:4px;
+padding-top:2px;background: none;border:0px;color: #000;font-size: 10pt;text-align:left;} /*輸入格*/
+#search li input{border: 0px;background:url(https://pic.pimg.tw/luna05/f49eeb809d5016ba963fea6d76c7998b.png) no-repeat ;text-align:right;color: #F6F6F6;font-size: 0.5pt;width:20px;height:19px} /*搜尋按鈕*/
+
+#feed{} /*新聞交換(RSS)*/
+#feed h4.box-title{}
+#feed .box-text{}
+#feed ul{text-align:center }
+#feed li{margin-bottom:5px}
+
+#visitor
+,#crumb
+,#friendbox{}
+/*誰來我家,我去誰家,我的好友*/
+#visitor h4.box-title
+,#crumb h4.box-title
+,#friendbox h4.box-title{}
+#visitor .box-text
+,#crumb .box-text
+,#friendbox #.box-text{}
+#visitor ul
+,#crumb ul
+,#friendbox ul.friendlist {overflow: hidden ;_overflow: none; _height: 1%;;}
+#visitor li
+,#crumb li
+,#friendbox ul.friendlist li{ float : left;} /*每個頭像*/
+#visitor li img
+,#crumb li img
+,#friendbox ul.friendlist li img{width:23.5pt; height:23.5pt;border: 0px!important ; padding:0px!important ;margin:4px}
+#friendbox ul.friendlist li img{margin:1pt}
+#visitor .box-more
+,#crumb .box-more
+,.friends-all #friendbox-open-friends-iframe{clear : both;width:200px;display : block;font-size: 11px;text-align:center;line-height: 18px; }
+/*所有瀏覽列表,顯示共X名好友*/
+
+#visitor .box-more a
+,#crumb .box-more a
+,.friends-all #friendbox-open-friends-iframe {display : lnline;padding: 0px!important   ;background: none;color: #b39f8c;}
+#visitor .box-more a:hover
+,#crumb .box-more a:hover
+,.friends-all a:hover{background: #b39f8c !important ;color: #ffffff !important }
+
+#counter{overflow: hidden ;
+_overflow: none;
+_height: 1%;;} /*參觀人氣*/
+#counter h4.box-title{}
+#counter .box-text{}
+#counter ul{}
+#counter li{width:99px;font-size: 11px;color: #b39f8c;float : left;}
+#counter li span {font-size: 10pt;color: #4a4a4a;}
+
+#powered{overflow: hidden ;
+_overflow: none;
+_height: 1%;;} /* POWERED BY*/
+#powered h4.box-title{}
+#powered .box-text{}
+#powered ul{}
+#powered li{font-size: 11px;color: #8a623b;text-align:right;overflow: hidden ;
+_overflow: none; text-align:center;
+_height: 1%;;}
+
+#calendar{} /*月曆*/
+#calendar h4.box-title{}
+#calendar table{;text-align:center;width:182px;margin:0 auto;}  /*月曆儲存格*/
+th{text-align:center !important;}
+th.cal-backward{} /*上個月*/
+th.current-month{} /*當月*/
+th.cal-forward{}/*下個月*/
+.weekday{display : none;}/*星期幾*/
+
+td[nowrap]{
+width:26px;line-height: 26px;background:#E8DFD6;color: #554F4B;display : lnline;font-size:9pt;}/*每一天*/
+td[nowrap] a{color: #554F4B;;background:#f2f2f2;width:26px;line-height: 26px;display : block; } /*有連結的日期*/
+td[nowrap] a:hover{background:#fafafa;color: #554F4B;font-weight: bold;color: #4d2a08;}
+td.today{background:#fff;color: #000;font-weight: bold;} /*今天*/
+td.today a{background:#fff;}
+td.today a:hover{}
+
+#subscription {;} /*最新訂閱*/
+#subscription h4.box-title{}
+#subscription .box-text{}
+#subscription ul{}
+#subscription li{text-align:right;margin-bottom:5px}/*各訂閱*/
+#subscription li a{text-align:left;}
+#subscription li a:hover {}
+#subscription li span {font-family:Verdana;}/*訂閱名稱*/
+
+#mylink img{filter:alpha(opacity=60);opacity: 0.6; }/*我的連結*/
+#mylink h4.box-title{}
+#mylink .box-text{}
+#mylink .inner-box{margin-bottom:5px;} /*每個連結群組*/
+#mylink h6.expandable{background:#E8DFD6;color: #554F4B;}
+#mylink h6{font-weight: bold;color: #554F4B;;background:#f6f6f6;padding:0 5px}
+#mylink ul{;margin:0 0 0 10px}
+#mylink li{}/*各連結*/
+#mylink li a {}
+#mylink li a:hover{}
+
+#murmur{}/*我的 Murmur (基本)*/
+#murmur h4.box-title{}
+#murmur .box-text{}
+li.murmur-time{font-size: 10px;color: #8a623b;} /*時間*/
+li.murmur-text{} /*內容*/
+
+
+#broadcast {}/*追蹤的 Murmur*/
+#broadcast h4.box-title{}
+#broadcast .box-text span {}
+#followed-murmurs {}
+#broadcast li.murmurs-entry{}
+#broadcast .murmurs-photo a{}
+#broadcast .murmurs-photo a img{padding: 0px!important   ;}/**/
+#broadcast .murmurs-content{color: #eee;}
+#broadcast a.murmurs-author{display : block;}
+#broadcast .murmurs-content span {color: #554F4B;font-family:Verdana;}
+.murmurs-functions {color: #eee;}
+.murmurs-functions span{color: #aaa;}
+.show-all-murmurs{font-size: 11px;text-align:right;}
+a.show-all-murmurs {display : lnline;padding: 3px  ;background: none;color: #b39f8c!important ;}
+a:hover.show-all-murmurs {background: #b39f8c!important ;color: #fff!important ;}
+
+#newsfeed {}/**/
+#newsfeed h4.box-title{}/**/
+#newsfeed .box-text{}/**/
+#subscriptions{}
+#subscriptions ul{}
+li.newsfeed-entry{}
+.newsfeed-photo a{}
+.newsfeed-photo img{border: 0px!important   ;}
+.newsfeed-content{}
+span.newsfeed-author{color: #aaa;}/**/
+span.newsfeed-author a{}/**/
+span{border: 0px!important}/**/
+.update-link a{border: 0px! !important;color: #b39f8c}/**/
+
+select{filter:alpha(opacity=60);opacity: 0.6;}
+
+.folder{} /*所有自訂欄位*/
+.folder h4.box-title{}
+.folder .box-text{}
+.folder .box-text a {display : block;}
+.folder .box-text a:hover{}
+
+
+/*------------------------------------------------------------ links end */
+/*------------------------------------------------------------ main end */
+/*------------------------------------------------------------ footer */
+#footer{clear : right;width:590px;margin-left:285px !important;}/*頁尾描述內容及#bottom */
+#footer p{}/*頁尾描述內容*/
+#bottom{text-align:right;;color: #b39f8c}
+a.bottom-skiplink{}/*回到頁首 回到主文*/
+a.bottom-pixnet{}/*免費註冊 服務中心 痞客邦首頁 版權宣告*/
+/*------------------------------------------------------------ footer end */
+/*------------------------------------------------------------ container3 end */
+#extradiv1/*數字*/{background:#eee ;padding-top: 20px; }/*11~8*/
+/*------------------------------------------------------------ container2 end */
+#extradiv/*數字*/{}/*7~4*/
+/*------------------------------------------------------------ container end */
+#extradiv/*數字*/{}/*3~
+
+
+
+
+
+
+
+.recommended-posts3{width:568px ;margin:50px auto!important ; } /*您可能會有興趣的文章*/
+.recommended-posts3 h5{text-align:center ;font-size: 12pt!important ;color: #333;background:#ddd!important ;padding: 5px  0 !important ;  }/*您可能會有興趣的文章字樣*/
+.recommended-posts3 ul{border-right: 0px solid  #fff!important;margin:0px!important  ;}
+.recommended-posts li{border-left: 0px solid  #fff!important;padding:0px!important;
+width:142px!important;}
+.recommended-posts3 li a {background:#eee!important ;color: #333!important ;padding:0px!important; ; width:142px!important;}
+.recommended-posts3 li a:hover{background:#fff!important ; color: #333!important ;  }
+.recommended-posts3 li  img  {border: 5px solid  #fff!important; margin:0;padding:0 !important;}
+.recommended-posts3 li  img:hover  {}
+.recommended-posts3 li span{}
+
+
+
+.recommended-posts1  {height:150px!important ;position : relative;background:#ddd!
+
+important  }
+.recommended-posts1  h5{border: 1px solid  #eee!important;text-align:center ;font-size:12pt!important ;color: #333;background:#eee!important ;; padding-right:65px!important
+
+;}
+.recommended-posts1  h5 span{}
+.recommended-posts1  img {border: 2px solid  #fff!important; position: absolute;margin-top:40px!important;;padding:0 !important;;width:85px;height:85px;}
+.recommended-post-image{}
+.recommended-posts1 ul{list-style:none!important;
+margin-top:20px!important ;}
+.recommended-posts1 li{list-style:none!important;border: 0px !important;
+width:142px!important;}
+.recommended-posts1 li a {background:#ddd!important ;text-decoration: none!important ;color: #555!important ;
+width:450px!important;padding:0 !important;}
+.recommended-posts1 li a:hover{background:#fff!important ; color: #555!important ; }

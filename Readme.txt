@@ -18,6 +18,7 @@ https://blog.xuite.net/yh96301/blog/54058764
 	14. https://blog.xuite.net/yh96301/blog/61871043
 	15. https://blog.xuite.net/yh96301/blog/61946269
 	16. https://blog.xuite.net/yh96301/blog/217485548
+	XX.https://ff1975.pixnet.net/blog/post/69178572-word%E7%9A%84%E9%A6%96%E9%A0%81%E4%B8%8D%E8%A6%81%E9%A0%81%E7%A2%BC
 
 以下是各參考資料的教學大綱
 	1. Word 2010「大綱模式」設定論文的格式(手動編號)：在書寫論文之前，先使用「大綱模式」，建立章節的階層目錄，設定各階層與本文的格式，再書寫論文，可以節省很多時間。本文說明，如何以「大綱模式」，手動輸入章節編號的方式設立含章、節、目等三個階層的論文格式。
