@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0236)https://ssp.hinet.net/api/web/request?c=2017005&s=202001000001&u=bfae494d-68ab-4464-ae14-c3042b445c41&ad=bfae494d-68ab-4464-ae14-c3042b445c41&t=1585119368480&oi=gA5Xx&site=https%3A%2F%2Fblog.xuite.net%2Fyh96301%2Fblog%2F46063434&o=2arc5 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+</style>
+</head>
+<body marginwidth="0" marginheight="0">
+
+<script src="./tag.js.下載"></script>
+<script src="./jquery-1.9.1.min.js.下載" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+(function(){
+    function hideAd() {
+    }
+    window.hideAd = hideAd;
+    function noAd() {
+        console.info('SSP AD noAd 2arc5');
+        clearTimeout(thirdTime);
+        clearInterval(monitor);
+        hideAd();
+        window.location.replace('https://ssp.hinet.net/api/web/request/?c=2017005&s=202001000001&t=1585119368480&u=bfae494d-68ab-4464-ae14-c3042b445c41&o=2arc5&show=static&ca=&k=&cab=&kb=&mode=roll');
+    }
+    window.noAd = noAd;
+    function showAd() {
+        clearTimeout(thirdTime);
+        $.get("https://ssp.hinet.net/api/web/third?c=2017005&s=202001000001&th=71&wc=1723");
+        console.info('SSP AD show 2arc5');
+    }
+    window.showAd = showAd;
+    var thirdTime = setTimeout(function() {
+        var yahoo_ad = $('#thirdparty').find('img').attr('src');
+        var head_javascript = $('head').find('script');
+        var iframe_content = $('body').find('iframe');
+        if(yahoo_ad !=  undefined || iframe_content.length > 0|| head_javascript.length > 0){
+            showAd();
+        }else{
+            noAd();
+        }
+    },3000);
+
+    var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent",
+    eventer = window[eventMethod],
+    messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+    eventer(messageEvent,function(e) {
+        //console.log(e)
+        var key = e.message ? "message" : "data",
+            data = e[key];
+        if(data === "noAd"){ console.info(data); noAd();e.stopPropagation();}
+        if(data === "showAd"){console.info(data); showAd();e.stopPropagation();}
+    },false);
+    
+    var monitor = setInterval(function(){
+        var elem = document.activeElement;
+        if(elem && (elem.tagName == 'IFRAME' || elem.tagName == 'iframe')){
+            clearInterval(monitor);
+            console.info('clicked!')
+            hideAd();
+        }
+    },1000)
+})();
+</script>
+<div id="thirdparty">
+<a style="text-decoration: none; display:inline-block;" href="https://rtb-asiamax.tenmax.io/bid/click/1585119370984/b6939920-6e65-11ea-846a-755cda8e7b5e/27017/25480/?optInfo=xlKYjppHLWf6&amp;sUrl=https%3A%2F%2Fssp.tenmax.io%2Fauction%2Fwinner%2Ftracking%2Fclk%3Fbid%3Db6939920-6e65-11ea-846a-755cda8e7b5e%26ssid%3Db6483840-6e65-11ea-8549-314bdfae6fd2%26iid%3D0%26dspid%3Ddb0efe1b-8522-45f8-a460-86bf42e3e3b8%26adurl%3D&amp;feedId=d749ee30-9094-4aff-8b8f-0cb186cd7b86&amp;rUrl=https%3A%2F%2Fs.tenmax.io%2FkWYH8" target="_blank">
+       <div style="width: 100%; height: auto;
+                   border-top: 1px solid #D0D0D0;
+                   border-bottom: 1px solid #D0D0D0;
+                   background-color: #ffffff;
+                   float: left;
+                   padding: 5px 0px;">
+               <div style="height: 19px;
+                           text-align:left;
+                           padding: 0px 20px;
+                           font-size: 0.7em;
+                           line-height: 14px;
+                           color: #90949c;">AFTEE先取後付
+                       <span style="float: right;">贊助</span>
+               </div>
+               <img style=" width: 100%;
+                           height: auto;
+                           border: 0;" src="./f76bc6a6.png">
+               <div style=" padding: 5px 20px 0px 20px;">
+                              <div style="font-size: 1em;
+                                          line-height: 1.3em;
+                                          font-weight: bold;
+                                          color: #000;
+                                          text-overflow: ellipsis;
+                                          text-align: justify;
+                                          margin-bottom: 5px;">
+                                          AFTEE先取後付《感謝祭》開跑！全通路結帳現折100元
+                              </div>        
+               </div>       
+       </div>
+</a><ins class="rmax" data-rmax-space-id="b17bee72a84b468a" data-rmax-space-type="NATIVE" data-target-pos="BEFORE" data-target-dc-container="div[style=&#39;width:300px; display:block; margin:0 auto;&#39;]" data-rmax-space-picked="true" data-rmax-status="ad displayed" data-rmax-session-id="b6483840-6e65-11ea-8549-314bdfae6fd2" data-rmax-result="freakout -&gt; asiamax.native -&gt; filled" style="text-decoration: none;"><img src="./224" style="display: none;"><img src="./request" style="display: none;"><iframe src="./saved_resource.html" style="display: none; margin: 0px; padding: 0px;"></iframe><img src="./impression" style="display: none;"><img src="./pixel" style="display: none;"><img src="./saved_resource" style="display: none;"></ins>
+<script async="async" src="./adsbytenmax.js.下載"></script></div>
+
+
+<img src="./b734323b-0532-40a6-8d4e-782e1c96bd3a" class="acvzdmp" style="display: none;"></body></html>

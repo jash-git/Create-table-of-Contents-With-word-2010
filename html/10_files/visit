@@ -1,0 +1,1 @@
+/**/ typeof dbljson1 === 'function' && dbljson1("OK");

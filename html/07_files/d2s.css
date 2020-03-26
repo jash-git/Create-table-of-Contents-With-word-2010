@@ -1,0 +1,7 @@
+body .wowocean-d2s-modal {position:fixed;bottom:0;width:100%;left:0;background:transparent;justify-content:center;z-index:100000001;}
+body .wowocean-d2s-modal .wowocean-d2s-kw {position:fixed;bottom:0;left:0;justify-content:center;padding-bottom:30px;-webkit-box-pack:center;-ms-flex-pack:center;width:100%;text-align:center;}
+body .wowocean-d2s-modal .wowocean-d2s-kw h3 {box-shadow:0 4px 30px rgba(0,0,0,0.3);background: #fff; padding: 10px 16px; border-radius: 30px;display:inline-block;}
+body .wowocean-d2s-modal .wowocean-d2s-kw h3 i {color:#4882e7;font-size:23px;vertical-align:bottom;}
+body .wowocean-d2s-modal .wowocean-d2s-kw h3 span {font-size:18px;font-weight:bold;color:#333;}
+body .wowocean-d2s-modal .wowocean-d2s-wrapper {position:relative;margin:0 auto;z-index:1000000001;display:block;box-shadow:0 -3px 10px rgba(0,0,0,0.4);max-width:790px;}
+body .wowocean-d2s-modal .wowocean-d2s-wrapper .wowocean-d2s-close { position: absolute; top: 6px; right: 6px; background: url(//static.adsinstant.com/image/icon_close2.png) no-repeat center center; border-radius: 25px; height: 25px; width: 25px; cursor: pointer; opacity: 1; z-index: 10002;background-color:rgba(0, 0, 0, 0.4);}

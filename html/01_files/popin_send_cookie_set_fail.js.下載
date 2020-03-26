@@ -1,0 +1,181 @@
+(function() {
+
+    var _uid = "";
+    var _host = "https://api.popin.cc";
+    var _midPage = _host + "/iframe/piuid.html?ac=piuid&t=15009898";
+    var _uidRex = /^([\d\w]{32})|(\d{13})-\d+$/;
+    var _lsKey = "__pi_jj_";
+    var _completeUid = "";
+    var _ifo = null;
+    var _isNew = false;
+
+    function main() {
+        try {
+            // sendLog(0);
+            if(!window.localStorage) {
+                sendLog(3);
+                return;
+            }
+            _completeUid = lsGet(_lsKey) || "";
+
+            if("function" === typeof window.postMessage){
+                getIdFromIframe();
+            } else {
+                sendLog(2);
+            }
+            
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    function getIdFromIframe() {
+
+        _ifo = cio(_midPage);
+
+        function callback(eve) {
+            try{
+                if(_ifo.window !== eve.source) {
+                    return;
+                }
+
+                var data = JSON.parse(eve.data);
+                if(data.action === "get") {
+                    if(!data.payload && _completeUid !== "" ) {
+                        sendLog(1);
+                    }
+
+                    lsSet(_lsKey, 1);
+                    // if(data.payload) {
+                    //     lsSet(_lsKey, data.payload);
+                    //     // window.removeEventListener("message", callback);
+                    //     // _ifo.parentNode && _ifo.parentNode.removeChild(_ifo);
+                    //     // _ifo = null;
+                    // }
+                }
+            }catch(e) {
+                console.error(e);
+                // logError(e);
+            }
+        }
+
+        window.addEventListener("message", callback, false);
+    }
+
+    function cio(url, option) {
+        url = url || "about:self";
+        option = option || {};
+        var pnode = (typeof option.pnode !== "undefined" && typeof option.pnode.nodeValue !== "undefined") ? option.pnode : document.body;
+        var iframe = ce(pnode, "iframe");
+
+        
+        iframe.src = url;
+        iframe.setAttribute("scrolling","no");
+        iframe.setAttribute("frameBorder","0");
+        iframe.setAttribute("allowTransparency", "true");
+
+        (function(s){
+            s.display = "block";
+            s.width = "0px";
+            s.height = "0px";
+            s.margin = "0px";
+            s.padding = "0px";
+            s.overflow = "none";
+        })(iframe.style);
+
+        var iframeObj = {
+            element: iframe,
+            document: iframe.contentDocument || iframe.contentWindow.document,
+            window: (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument.document) ? iframe.contentDocument.document : iframe.contentDocument,
+            write: function(text){
+                iframeObj.document.open();
+                iframeObj.document.write(text);
+                iframeObj.document.close();
+            }
+        };
+
+        return iframeObj;
+    }
+
+
+    function ce(object, type, text) {
+        var el = object.appendChild(document.createElement(type));
+        if (!text){ el.appendChild(document.createTextNode(text)); }
+        return el;
+    }
+
+    function sendTdLog(db, table, data) {
+        var self = this;
+        if (window.Treasure2) {
+            (new window.Treasure2({
+                writeKey: "8378/25839e06ce4cc1cab55c1c1f1e49d336d6d1d48f",
+                database: db //'popin_comment_fe'
+            })).addRecord(table, data);
+        } else {
+            setTimeout(function () {
+                self.sendTdLog(db, table, data);
+            });
+        }
+    }
+
+    function lsGet(key) {
+        try {
+            return window.localStorage.getItem(key);
+        } catch (error) {
+            return undefined;
+        }
+    }
+
+    function lsSet(key, value) {
+        try {
+            window.localStorage.setItem(key, value);
+        } catch (error) {
+            return false;
+        }
+    }
+
+    function lsRemove(key){
+        try{
+            return localStorage.removeItem(key);
+        }catch(e){
+            return "";
+        }
+    }
+
+    // type 1:正常cookie设置失败上报  2:不支持postmesssage 3:不支持localstroage
+    function sendTdLogHandle(type, modeType) {
+        var data = {
+            'device': /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+                ? 'mobile'
+                : 'pc',
+            'td_host': location.host,
+            'td_url': location.href,
+            'user_agent': navigator.userAgent,
+            'is_amp': /.ampproject./.test(location.host),
+            'is_private_mode': modeType,
+            type: type
+        }
+        sendTdLog('fe_monitor', 'failed_cookie', data);
+    }
+
+    function getBrowserMode(callback) {
+        var fs = window.RequestFileSystem || window.webkitRequestFileSystem;
+        if (!fs) {
+            callback(undefined);
+        } else {
+            fs(window.TEMPORARY,100,function(){
+                callback(false)
+            },function(){
+                callback(true);
+            });
+        }
+    }
+
+    function sendLog(type) {
+        getBrowserMode(function (modeType) {
+            sendTdLogHandle(type, modeType);
+        });
+    }
+
+    main();
+})();
